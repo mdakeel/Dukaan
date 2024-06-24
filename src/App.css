@@ -10,7 +10,11 @@ body{
     font-family: 'Jost', sans-serif;
 }
 
-nav{
+html, body{
+  scroll-behavior: smooth;
+}
+
+/* nav{
     z-index: 10001 !important;
 }
 
@@ -32,4 +36,4 @@ nav{
 
 .btnPrimary{
     @apply py-3 px-8 bg-secondary font-semibold text-white rounded hover:bg-primary transition-all duration-300;
-}
+} */
