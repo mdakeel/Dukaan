@@ -71,7 +71,7 @@ const Header = () => {
                         </Link>
         
                         <Link to={"/login"} >
-                        <p className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><MdLogout /> Logout </p>
+                        <p className='m-2 px-2 py-[6px]  flex items-center  bg-gray-200 hover:bg-gray-300 gap-3 cursor-pointer hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base rounded-md shadow-md'><MdLogout /> Logout </p>
                         </Link>
                     </motion.div>
                     )
@@ -83,6 +83,14 @@ const Header = () => {
 
         {/* mobile */}
         <div className='flex items-center justify-between md:hidden w-full h-full'>
+            
+        <div className='relative flex items-center justify-center '>
+                <MdShoppingBasket className='text-textColor  text-2xl  cursor-pointer'/>
+                <div className='absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center'>
+                    <p className='text-xs text-white font-semibold'>2</p>
+                </div>
+            </div>
+
         <Link to={'/'} className='flex items-center gap-2 cursor-pointer'>
                 <img src={logo} className='w-7 object-cover' alt="logo" />
                 <p className='text-headingColor text-[25px] font-bold'>DukaaN</p>
@@ -128,7 +136,7 @@ const Header = () => {
                         </Link>
         
                         <Link to={"/login"} >
-                        <p className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><MdLogout /> Logout </p>
+                        <p className='m-2 px-2 py-[6px]  flex items-center  bg-gray-200 hover:bg-gray-300 gap-3 cursor-pointer hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base rounded-md shadow-md'><MdLogout /> Logout </p>
                         </Link>
                     </motion.div>
                     )
