@@ -61,17 +61,17 @@ const Header = () => {
                          >
 
                         <Link to={"/createItem"} >
-                        <p className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <CgProfile /> Profile
+                        <p onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <CgProfile /> Profile
                         </p>
                         </Link>
 
                         <Link to={"/dashboard"} >
-                        <p className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <RxDashboard /> Dashboard
+                        <p onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <RxDashboard /> Dashboard
                         </p>
                         </Link>
         
                         <Link to={"/login"} >
-                        <p className='m-2 px-2 py-[6px]  flex items-center  bg-gray-200 hover:bg-gray-300 gap-3 cursor-pointer hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base rounded-md shadow-md'><MdLogout /> Logout </p>
+                        <p onClick={() => setIsMenu(false)} className='m-2 px-2 py-[6px]  flex items-center  bg-gray-200 hover:bg-gray-300 gap-3 cursor-pointer hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base rounded-md shadow-md'><MdLogout /> Logout </p>
                         </Link>
                     </motion.div>
                     )
@@ -120,23 +120,22 @@ const Header = () => {
                          >
 
                         <Link to={"/createItem"} >
-                        <p className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <CgProfile /> Profile
+                        <p onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <CgProfile /> Profile
                         </p>
                         </Link>
 
                         <ul className=' items-center w-full '>
-                <li className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><RiHome3Line /> Home</li>
-                <li className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><CgMenuBoxed /> Menu</li>
-                <li className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><MdOutlineInfo /> About Us</li>
+                <li  onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><RiHome3Line /> Home</li>
+                <li  onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><CgMenuBoxed /> Menu</li>
+                <li  onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><MdOutlineInfo /> About Us</li>
             </ul>
 
                         <Link to={"/dashboard"} >
-                        <p className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <RxDashboard /> Dashboard
-                        </p>
+                        <p onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <RxDashboard /> Dashboard</p>
                         </Link>
         
                         <Link to={"/login"} >
-                        <p className='m-2 px-2 py-[6px]  flex items-center  bg-gray-200 hover:bg-gray-300 gap-3 cursor-pointer hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base rounded-md shadow-md'><MdLogout /> Logout </p>
+                        <p onClick={() => setIsMenu(false)} className='m-2 px-2 py-[6px]  flex items-center  bg-gray-200 hover:bg-gray-300 gap-3 cursor-pointer hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base rounded-md shadow-md'><MdLogout /> Logout </p>
                         </Link>
                     </motion.div>
                     )
