@@ -15,6 +15,10 @@ html, body{
   overflow-x: hidden;
 }
 
+.rowContainerBg{
+  background: rgb(2,0,36);
+background: linear-gradient(270deg, rgba(255, 131, 0, 0.05) 0%, rgba(255, 131, 0, 0.05) 35%, rgb(241,175,134) 100%);
+}
 /* nav{
     z-index: 10001 !important;
 }

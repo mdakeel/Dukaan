@@ -129,7 +129,7 @@ const CreateContainer = () => {
               type="text"
               required
               value={item.price}
-              onChange={(e) => setItem({...item, setPrice: e.target.value} )}
+              onChange={(e) => setItem({...item, price: e.target.value} )}
               placeholder="Price"
               className="w-full h-full text-lg bg-transparent outline-none border-none placeholder:text-gray-400 text-textColor"
             />
