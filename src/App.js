@@ -7,6 +7,7 @@ import MainContainer from './components/MainContainer';
 import { AnimatePresence } from 'framer-motion'
 
 function App() {
+
   return (
     <AnimatePresence>
         <div className='w-screen h-screen flex flex-col bg-primary'>
