@@ -3,7 +3,7 @@ import HomeContainer from './HomeContainer';
 import { motion } from 'framer-motion';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import RowContainer from './RowContainer';
-import { carousel } from '../utils/data';
+import { carousel } from '../../utils/data';
 import MenuContainer from './MenuContainer';
 
 const MainContainer = () => {

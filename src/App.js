@@ -1,9 +1,9 @@
 
 import './App.css';
-import CreateContainer from './components/CreateContainer';
-import Header from './components/Header';
+import CreateContainer from './components/admin/CreateContainer';
+import Header from './components/header/Header';
 import { Routes, Route } from 'react-router-dom'
-import MainContainer from './components/MainContainer';
+import MainContainer from './components/home/MainContainer';
 import { AnimatePresence } from 'framer-motion'
 
 function App() {

@@ -1,7 +1,7 @@
 import React from 'react'
-import delivery from '../assets/delivery.png'
-import heroBg from '../assets/heroBg.png'
-import { heroData } from '../utils/data'
+import delivery from '../../assets/delivery.png'
+import heroBg from '../../assets/heroBg.png'
+import { heroData } from '../../utils/data'
 import { motion } from 'framer-motion'
 
 

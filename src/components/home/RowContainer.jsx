@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MdShoppingBasket } from 'react-icons/md';
-import { carousel } from '../utils/data';
+import { carousel } from '../../utils/data';
 
 const RowContainer = ({value}) => {
     const containerWidth = carousel.length * 260;

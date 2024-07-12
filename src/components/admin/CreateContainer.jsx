@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import {motion} from 'framer-motion'
 import { MdAttachMoney, MdCloudUpload, MdDelete, MdFastfood, MdFoodBank } from 'react-icons/md'
-import {categories} from '../../src/utils/data'
-import Loader from './Loader'
+import {categories} from '../../utils/data'
+import Loader from '../common/Loader'
 
 const CreateContainer = () => {
   const [item, setItem] = useState({
