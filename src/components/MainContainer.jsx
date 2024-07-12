@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import RowContainer from './RowContainer';
 import { carousel } from '../utils/data';
+import MenuContainer from './MenuContainer';
 
 const MainContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -29,11 +30,14 @@ const MainContainer = () => {
     <div className='w-full h-auto flex flex-col items-center justify-center'>
       <HomeContainer />
 
-      <section className='w-full my-10'>
-        <div className='w-full flex items-center justify-between'>
-          <p className='text-2xl font-semibold capitalize text-headingColor'>
-            Our fresh & healthy fruits
+      <section className='w-full mt-10'>
+        <div className='w-full flex items-center justify-between '>
+          <div className='flex flex-col gap-2'>
+          <p className='text-3xl font-bold capitalize text-headingColor '>
+            Our fresh & healthy fruits 
           </p>
+          <span className='border-2 rounded-full border-orange-600 w-[140px] '></span>
+          </div>
 
           <div className='hidden md:flex gap-3 items-center'>
             <motion.div
@@ -57,6 +61,9 @@ const MainContainer = () => {
 
         <RowContainer value={{ currentIndex }} />
       </section>
+
+       <MenuContainer />
+       
     </div>
   );
 };
