@@ -34,6 +34,8 @@ export const heroData = [
   },
 ];
 
+
+
 export const carousel = [
   {
     id: 1,
@@ -132,3 +134,4 @@ export const categories = [
     urlParamName: "drinks",
   },
 ];
+

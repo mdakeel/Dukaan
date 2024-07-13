@@ -17,14 +17,14 @@ const RowContainer = ({value}) => {
         }}
       >
       {carousel.map((item) => (
-        <div key={item.id}  className=' bg-gray-50 rounded-xl drop-shadow-lg hover:bg-orange-50 rounded-lg transition-transform duration-500'>
+        <div key={item.id}  className=' bg-gray-50 rounded-xl drop-shadow-lg hover:bg-orange-50  transition-transform duration-500'>
           <div className='w-[260px] h-[180px]  transition-all duration-100  flex flex-col items-center  justify-evenly relative'>
-            <div className='w-full flex items-center justify-between px-4'>
+            <div className='w-full flex items-center justify-between px-4 -mt-4'>
               <motion.img
                 whileHover={{ scale: 1.2 }}
                 src={item.imageSrc}
                 alt={item.name}
-                className='w-[130px] -mt-10 drop-shadow-2xl'
+                className='w-[130px]  drop-shadow-2xl'
               />
               <motion.div
                 whileTap={{ scale: 0.75 }}

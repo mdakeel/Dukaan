@@ -4,7 +4,8 @@ import { motion } from 'framer-motion';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import RowContainer from './RowContainer';
 import { carousel } from '../../utils/data';
-import MenuContainer from './MenuContainer';
+import MenuContainer from '../product/MenuContainer';
+import Category from '../product/Category';
 
 const MainContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -62,7 +63,7 @@ const MainContainer = () => {
         <RowContainer value={{ currentIndex }} />
       </section>
 
-       <MenuContainer />
+       <Category />
        
     </div>
   );
