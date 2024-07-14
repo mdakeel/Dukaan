@@ -21,7 +21,7 @@ const MobileNavbar = () => {
     }
 
   return (
-    <div className='flex items-center justify-between md:hidden w-full h-full'>
+    <div className='flex items-center justify-between md:hidden  w-full h-full'>
             
         <div className='relative flex items-center justify-center '>
                 <MdShoppingBasket className='text-textColor  text-2xl  cursor-pointer'/>
@@ -30,16 +30,17 @@ const MobileNavbar = () => {
                 </div>
             </div>
 
-        <Link to={'/'} className='flex items-center gap-2 cursor-pointer'>
+        <div><Link to={'/'} className='flex flex-row items-center gap-2 cursor-pointer'>
                 <img src={logo} className='w-7 object-cover' alt="logo" />
                 <p className='text-headingColor text-[25px] font-bold'>DukaaN</p>
         </Link>
+        </div>
 
-        <div className='relative'>
+        <div className='relative '>
             <motion.div 
             whileTap={{scale: .8}}
             onClick={login}
-            src={profile} className='w-10 min-w-[35px] h-10 min-h-[35px] drop-shadow-md cursor-pointer' alt="userProfile" 
+            src={profile} className='w-10 pt-1 min-w-[35px] h-10 min-h-[35px] drop-shadow-md cursor-pointer' alt="userProfile" 
             // onClick={login}
             >
                 {

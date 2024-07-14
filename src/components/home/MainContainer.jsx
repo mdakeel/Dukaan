@@ -6,6 +6,7 @@ import RowContainer from './RowContainer';
 import { carousel } from '../../utils/data';
 import MenuContainer from '../product/MenuContainer';
 import Category from '../product/Category';
+import Footer from '../footer/Footer';
 
 const MainContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -34,10 +35,10 @@ const MainContainer = () => {
       <section className='w-full mt-10'>
         <div className='w-full flex items-center justify-between '>
           <div className='flex flex-col gap-2'>
-          <p className='text-3xl font-bold capitalize text-headingColor '>
+          <p className='md:text-3xl text-xl font-bold capitalize text-headingColor '>
             Our fresh & healthy fruits 
           </p>
-          <span className='border-2 rounded-full border-orange-600 w-[140px] '></span>
+          <span className='border-2 rounded-full border-orange-600 w-[135px] '></span>
           </div>
 
           <div className='hidden md:flex gap-3 items-center'>
@@ -63,7 +64,11 @@ const MainContainer = () => {
         <RowContainer value={{ currentIndex }} />
       </section>
 
+      {/* categories */}
        <Category />
+
+      {/* footer  */}
+       <Footer />
        
     </div>
   );

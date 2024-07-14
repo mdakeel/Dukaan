@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-import { MdShoppingBasket, MdAdd, MdLogout, MdOutlineInfo } from 'react-icons/md'
+import { MdShoppingBasket, MdAdd, MdLogout} from 'react-icons/md'
 import { CgProfile } from "react-icons/cg";
 import { RxDashboard } from "react-icons/rx";
 
@@ -34,7 +34,7 @@ const DextopNavbar = () => {
     <motion.img 
     whileTap={{scale: .8}}
     onClick={login}
-    src={profile} className='w-10 min-w-[35px] h-10 min-h-[35px] drop-shadow-md cursor-pointer' alt="userProfile" 
+    src={profile} className='w-10 min-w-[35px] h-10 -mt-1 min-h-[35px] drop-shadow-md cursor-pointer' alt="userProfile" 
     // onClick={login}
     />
         {

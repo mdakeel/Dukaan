@@ -9,7 +9,7 @@ const RowContainer = ({value}) => {
   return (
     <div className='w-full  overflow-x-scroll  scrollbar-none mt-6 '>
          <div
-        className='flex w-full gap-6 px-2  py-4'
+        className='flex w-full gap-6 px-1  py-4'
         style={{
           transform: `translateX(-${value.currentIndex * 285}px)`,
           width: `${containerWidth}px`,

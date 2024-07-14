@@ -10,6 +10,7 @@ const HomeContainer = () => {
     <section className='grid grid-cols-1 md:grid-cols-2 gap-2 w-full ' id="home" >
       {/* left container */}
     <div className='py-2 md:w-[80%] w-full flex-1 flex flex-col items-start  justify-center gap-6'>
+      
         <div className='flex items-center gap-2 justify-center bg-orange-100 px-4 py-1 rounded-full  '>
           <p className='text-base text-orange-500 font-semibold'>Bike Delivery</p>
           <div className='w-8 h-8 rounded-full bg-white overflow-hidden drop-shadow-xl'>
