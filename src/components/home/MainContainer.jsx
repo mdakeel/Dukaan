@@ -7,6 +7,7 @@ import { carousel } from '../../utils/data';
 import MenuContainer from '../product/MenuContainer';
 import Category from '../product/Category';
 import Footer from '../footer/Footer';
+import Cart from '../cart/Cart';
 
 const MainContainer = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -66,6 +67,9 @@ const MainContainer = () => {
 
       {/* categories */}
        <Category />
+
+       {/* Cart Container */}
+       <Cart />
 
       {/* footer  */}
        <Footer />

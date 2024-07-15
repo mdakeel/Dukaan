@@ -18,6 +18,7 @@ const HomeContainer = () => {
             <Slider />
           </div>
           <img src={heroBg} className='ml-auto w-full lg:w-auto md:h-[550px] h-[430px] ' alt="cardBg" />
+          
         </div>
 
         <div className='md:w-[50%] w-full absolute top-10 right-0 '>
