@@ -2,9 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MdShoppingBasket } from 'react-icons/md';
 import { carousel } from '../../utils/data';
+import { useDispatch, useSelector } from 'react-redux';
+import { add } from '../../redux/cartSlice';
 
 const RowContainer = ({value}) => {
     const containerWidth = carousel.length * 260;
+
+    const dispatch = useDispatch();
+
+    const handleAdd = (e) => {
+      dispatch(add(e))
+    }
  
   return (
     <div className='w-full  overflow-x-scroll  scrollbar-none mt-6 '>
@@ -29,6 +37,7 @@ const RowContainer = ({value}) => {
               <motion.div
                 whileTap={{ scale: 0.75 }}
                 className='w-8 h-8 rounded-full bg-red-600 flex items-center justify-center cursor-pointer hover:shadow-md'
+                onClick={() => handleAdd(item)}
               >
                 <MdShoppingBasket className='text-white' />
               </motion.div>

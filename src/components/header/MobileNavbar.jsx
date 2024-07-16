@@ -12,9 +12,17 @@ import { FaBars } from "react-icons/fa6";
 import profile from '../../assets/avatar.png'
 import { motion }from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { toggleCart } from '../../redux/cartSlice';
+import { useDispatch, useSelector } from 'react-redux';
 
 const MobileNavbar = () => {
     const [isMenu, setIsMenu] = useState(false)
+    const cart = useSelector((state) => state.carts.cart)
+    const dispatch = useDispatch();
+    
+    const handleCartVisibility = (e) => {
+        dispatch(toggleCart(e))
+    } 
 
     const login = () => {
         setIsMenu(!isMenu)
@@ -24,9 +32,11 @@ const MobileNavbar = () => {
     <div className='flex items-center justify-between md:hidden  w-full h-full'>
             
         <div className='relative flex items-center justify-center '>
-                <MdShoppingBasket className='text-textColor  text-2xl  cursor-pointer'/>
+                <MdShoppingBasket 
+                onClick={handleCartVisibility}
+                className='text-textColor  text-2xl  cursor-pointer'/>
                 <div className='absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center'>
-                    <p className='text-xs text-white font-semibold'>2</p>
+                    <p className='text-xs text-white font-semibold'>{cart.length}</p>
                 </div>
             </div>
 

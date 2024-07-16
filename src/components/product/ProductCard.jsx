@@ -1,8 +1,17 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { MdShoppingBasket } from 'react-icons/md';
+import { useDispatch } from 'react-redux';
+import { add } from '../../redux/cartSlice';
+
 
 const ProductCard = ({ product }) => {
+  const dispatch = useDispatch();
+
+    const handleAdd = (e) => {
+      dispatch(add(e))
+    }
+
   return (
     <div className='w-[260px] h-[270px] flex flex-col bg-white  items-center justify-center gap-4 rounded-xl drop-shadow-xl  transition-transform duration-500'>
       <div className=" w-full h-full flex flex-col items-center justify-between py-4 ">
@@ -19,7 +28,9 @@ const ProductCard = ({ product }) => {
             <p className='text-3xl text-headingColor font-semibold'>
               <span className=' text-red-500'>$</span>{product.price}
             </p>
-            <button className="group relative bg-red-500 text-white py-2 px-4 rounded ">
+            <button 
+            onClick={() => handleAdd(product)}
+            className="group relative bg-red-500 text-white py-2 px-4 rounded ">
               <MdShoppingBasket size={"20"} className="text-white absolute top-[9px] left-[45px] invisible group-hover:visible opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
               <span className='group-hover:invisible  '>Add to Cart</span>
             </button>

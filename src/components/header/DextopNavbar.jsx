@@ -7,9 +7,17 @@ import { RxDashboard } from "react-icons/rx";
 import profile from '../../assets/avatar.png'
 import { motion }from 'framer-motion'
 import { Link } from 'react-router-dom'
+import { useDispatch, useSelector } from 'react-redux';
+import { toggleCart } from '../../redux/cartSlice';
 
 const DextopNavbar = () => {
     const [isMenu, setIsMenu] = useState(false)
+    const cart = useSelector((state) => state.carts.cart)
+    const dispatch = useDispatch();
+    
+    const handleCartVisibility = (e) => {
+        dispatch(toggleCart(e))
+    } 
 
     const login = () => {
         setIsMenu(!isMenu)
@@ -23,10 +31,12 @@ const DextopNavbar = () => {
         <li className='text-base text-textColor font-medium hover:text-headingColor duration-100 transition-all ease-in-out cursor-pointer'> About Us</li>
     </ul>
 
-    <div className='relative flex items-center justify-center '>
+    <div 
+    onClick={handleCartVisibility}
+    className='relative flex items-center justify-center '>
         <MdShoppingBasket className='text-textColor  text-2xl  cursor-pointer'/>
         <div className='absolute -top-2 -right-2 w-5 h-5 rounded-full bg-cartNumBg flex items-center justify-center'>
-            <p className='text-xs text-white font-semibold'>2</p>
+            <p className='text-xs text-white font-semibold'>{cart.length}</p>
         </div>
     </div>
 
