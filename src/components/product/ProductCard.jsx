@@ -13,7 +13,7 @@ const ProductCard = ({ product }) => {
     }
 
   return (
-    <div className='w-[260px] h-[270px] flex flex-col bg-white  items-center justify-center gap-4 rounded-xl drop-shadow-xl  transition-transform duration-500'>
+    <div className='w-[265px] h-[270px] flex flex-col  bg-card  hover:bg-white items-center justify-center gap-4 rounded-xl border border-gray-200  transition-transform duration-500'>
       <div className=" w-full h-full flex flex-col items-center justify-between py-4 ">
         <motion.img
           whileHover={{ scale: 1.2 }}

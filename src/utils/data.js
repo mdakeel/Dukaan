@@ -99,37 +99,42 @@ export const carousel = [
 export const categories = [
   {
     id: 1,
+    name: "All",
+    urlParamName: "All"
+  },
+  {
+    id: 2,
     name: "Chicken",
     urlParamName: "chicken",
   },
   {
-    id: 2,
+    id: 3,
     name: "Curry",
     urlParamName: "curry",
   },
   {
-    id: 3,
+    id: 4,
     name: "Rice",
     urlParamName: "rice",
   },
   {
-    id: 4,
+    id: 5,
     name: "Fish",
     urlParamName: "fish",
   },
   {
-    id: 5,
+    id: 6,
     name: "Fruits",
     urlParamName: "fruits",
   },
   {
-    id: 6,
+    id: 7,
     name: "Icecreams",
     urlParamName: "icecreams",
   },
 
   {
-    id: 7,
+    id: 8,
     name: "Soft Drinks",
     urlParamName: "drinks",
   },

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { BiTrash } from 'react-icons/bi'
 import { useDispatch, useSelector } from 'react-redux'
 import { add, decreament, remove } from '../../redux/cartSlice'
-import chef from '../../assets/chef1.png'
+
 
 const CartCard = () => {
     const cart = useSelector((state) => state.carts.cart)
@@ -30,16 +30,6 @@ const CartCard = () => {
     return (
         <div className='w-full h-full flex flex-col'>
              <div className='w-full h-[400px] md:h-42 px-6 py-8 flex flex-col gap-3 overflow-y-scroll scrollbar-none'>
-            {
-                cart.length === 0 ? (
-                    <>
-                    <div className='w-full h-[100px]  flex flex-col items-center gap-4 mt-6'>
-                                    <p className='text-2xl  text-[#B4B4B8] text-center pt-1 '>Your cart is Empty</p>
-                                    <img src={chef} alt="" className='w-[250px] h-[350px]' />
-                    </div>
-                    </>
-                ) : (
-                   <>
                    {cart.map((item) => (
                         <div key={item.id} className='w-full px-4 h-[70px] rounded-lg bg-cartItem flex items-center justify-between shadow-md gap-6'>
                              <div className='flex items-center gap-6 '>
@@ -72,11 +62,6 @@ const CartCard = () => {
                             </div>
                         </div>
                     ))}
-               </>
-
-                )
-
-            }
              </div>
            
             <div className='w-full flex-1 bg-cartTotal rounded-t-[2rem] flex flex-col items-center justify-evenly px-8 py-2'>

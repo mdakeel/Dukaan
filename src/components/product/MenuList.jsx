@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 
 const MenuList = ({ onCategoryClick, selectedCategory }) => {
   return (
-    <div className="w-full flex items-center gap-4 md:px-[5px] md:py-8 py-6 overflow-x-scroll scrollbar-none">
+    <div className="w-full flex items-center gap-4  md:py-8 py-6 overflow-x-scroll scrollbar-none">
           {categories &&
             categories.map((category) => (
               <motion.div
@@ -12,7 +12,7 @@ const MenuList = ({ onCategoryClick, selectedCategory }) => {
                 key={category.id}
                 className={`group  ${
                   selectedCategory === category.name ? "bg-cartNumBg" : "bg-card"
-                }   cursor-pointer  rounded-md drop-shadow-xl flex flex-col gap-2 items-center justify-center hover:bg-cartNumBg `}
+                }   cursor-pointer  rounded-md border border-gray-200  flex flex-col gap-2 items-center justify-center hover:bg-cartNumBg `}
                 onClick={() => onCategoryClick(category.name)}
               >
                
