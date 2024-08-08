@@ -4,7 +4,6 @@ import logo from '../../assets/logo.png'
 import { Link } from 'react-router-dom'
 import DextopNavbar from './DextopNavbar';
 import MobileNavbar from './MobileNavbar';
-import SearchBar from './SearchBar';
 
 const Header = () => {
 

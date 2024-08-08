@@ -4,9 +4,7 @@ import { motion } from 'framer-motion';
 import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
 import RowContainer from './RowContainer';
 import { carousel } from '../../utils/data';
-import MenuContainer from '../product/MenuContainer';
 import Category from '../product/Category';
-import Footer from '../footer/Footer';
 import Cart from '../cart/Cart';
 
 const MainContainer = () => {

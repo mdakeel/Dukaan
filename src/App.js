@@ -10,7 +10,7 @@ import SignUp from './components/user/SignUp';
 import Login from './components/user/Login';
 import Profile from './components/user/Profile';
 import ProtectedRoutes from './services/ProtectedRoutes';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer} from 'react-toastify';
 
 function App() {
   return (

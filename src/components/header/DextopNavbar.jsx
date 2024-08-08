@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import { MdShoppingBasket, MdLogout} from 'react-icons/md'
 import { CgProfile } from "react-icons/cg";
@@ -11,7 +11,6 @@ import { useDispatch, useSelector } from 'react-redux';
 import { toggleCart } from '../../redux/cartSlice';
 
 const DextopNavbar = () => {
-    const [isMenu, setIsMenu] = useState(false)
     const navigate = useNavigate();
     const cart = useSelector((state) => state.carts.cart)
     const dispatch = useDispatch();
@@ -19,6 +18,8 @@ const DextopNavbar = () => {
     const handleCartVisibility = (e) => {
         dispatch(toggleCart(e))
     } 
+
+
 
    const handleLogout = (e) => {
     e.preventDefault();
@@ -46,7 +47,6 @@ const DextopNavbar = () => {
     <div className='relative'>
     <motion.img 
     whileTap={{scale: .8}}
-    onClick={() => setIsMenu(true)}
     src={profile} className='w-10 min-w-[35px] h-10 -mt-1 min-h-[35px] drop-shadow-md cursor-pointer' alt="userProfile"  />
            
                 <motion.div
@@ -57,12 +57,12 @@ const DextopNavbar = () => {
                  >
 
                 <Link to={"/profile"} >
-                <p onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <CgProfile /> Profile
+                <p  className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <CgProfile /> Profile
                 </p>
                 </Link>
 
                 <Link to={"/dashboard"} >
-                <p  onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <RxDashboard /> Dashboard
+                <p   className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <RxDashboard /> Dashboard
                 </p>
                 </Link>
 

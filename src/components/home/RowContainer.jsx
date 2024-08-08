@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { MdShoppingBasket } from 'react-icons/md';
 import { carousel } from '../../utils/data';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import { add } from '../../redux/cartSlice';
 
 const RowContainer = ({value}) => {

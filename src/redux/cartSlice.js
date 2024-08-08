@@ -6,7 +6,6 @@ const initialState = {
     totalPrice: 0
 }
 
-const DELIVERY_CHARGE = 2.5;
 
 const cartReducer = createSlice({
     name: 'cart',
