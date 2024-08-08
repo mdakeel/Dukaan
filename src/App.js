@@ -7,6 +7,8 @@ import MainContainer from './components/home/MainContainer';
 import { AnimatePresence } from 'framer-motion'
 import store from './redux/store';
 import { Provider } from 'react-redux'
+import Footer from './components/footer/Footer';
+
 
 function App() {
 
@@ -22,6 +24,7 @@ function App() {
                 <Route path='/createItem' element={<CreateContainer />} />
               </Routes>
             </main>
+            <Footer />
         </div>
         </AnimatePresence>
     </Provider>

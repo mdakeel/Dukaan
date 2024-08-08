@@ -8,9 +8,9 @@ const MenuContainer = ({ onCategoryClick, selectedCategory, searchQuery, setSear
       <div className="w-full flex flex-col items-center justify-center">
         <div className="flex flex-col gap-2 items-end ">
           <p className="md:text-3xl text-xl font-bold capitalize text-headingColor ">
-            Our Hot Dishes
+          Explore Our Products
           </p>
-          <span className="border-2 rounded-full border-orange-600 w-[90px] "></span>
+          <span className="border-2 rounded-full border-orange-600 w-[120px] "></span>
         </div>
 
         <div className="w-full flex md:flex-row flex-col-reverse items-center justify-between">

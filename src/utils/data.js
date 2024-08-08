@@ -96,7 +96,11 @@ export const carousel = [
   
 ];
 
+// categories
+
+
 export const categories = [
+  
   {
     id: 1,
     name: "All",
@@ -135,8 +139,8 @@ export const categories = [
 
   {
     id: 8,
-    name: "Soft Drinks",
-    urlParamName: "drinks",
+    name: "Electronics",
+    urlParamName: "electronics",
   },
 ];
 

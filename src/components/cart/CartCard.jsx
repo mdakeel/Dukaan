@@ -33,7 +33,7 @@ const CartCard = () => {
                    {cart.map((item) => (
                         <div key={item.id} className='w-full px-4 h-[70px] rounded-lg bg-cartItem flex items-center justify-between shadow-md gap-6'>
                              <div className='flex items-center gap-6 '>
-                            <img src={item.imageSrc} alt="cart item" className='w-16 h-16 max-w-[60px] rounded-full object-contain' />
+                            <img src={item.photo} alt="cart item" className='w-16 h-16 max-w-[60px] rounded-full object-contain' />
                             <div className='flex flex-col flex'>
                                 <p className='text-base text-sm text-gray-50'>{item.name}</p>
                                 <p className='text-[13px] block text-gray-300 font-semibold'><span className='text-red-600'>$ </span>{item.price}</p>

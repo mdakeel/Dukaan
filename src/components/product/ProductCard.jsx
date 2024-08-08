@@ -17,7 +17,7 @@ const ProductCard = ({ product }) => {
       <div className=" w-full h-full flex flex-col items-center justify-between py-4 ">
         <motion.img
           whileHover={{ scale: 1.2 }}
-          src={product.imageSrc}
+          src={product.photo}
           alt={product.name}
           className='w-[130px] h-[130px] max-w-[120px]  drop-shadow-2xl'
         />

@@ -58,7 +58,7 @@ export const products = [
       "name": "Chicken Breast",
       "description": "Fresh chicken breast",
       "price": "8",
-      "imageSrc": C1,
+      "photo": C1,
       "category": "Chicken"
     },
     {
@@ -66,7 +66,7 @@ export const products = [
       "name": "Chicken Masala",
       "description": "Spicy chicken masala",
       "price": "8.5",
-      "imageSrc": C2,
+      "photo": C2,
       "category": "Chicken"
     },
     {
@@ -74,7 +74,7 @@ export const products = [
       "name": "Chicken Wings",
       "description": "Spicy chicken wings",
       "price": "10",
-      "imageSrc": C3,
+      "photo": C3,
       "category": "Chicken"
     },
     {
@@ -82,7 +82,7 @@ export const products = [
       "name": "Chicken Spicy",
       "description": "Spicy chicken ",
       "price": "5.5",
-      "imageSrc": C4,
+      "photo": C4,
       "category": "Chicken"
     },
     {
@@ -90,7 +90,7 @@ export const products = [
       "name": "Chicken Paneer",
       "description": "Spicy chicken Paner",
       "price": "9.5",
-      "imageSrc": C6,
+      "photo": C6,
       "category": "Chicken"
     },
     {
@@ -98,7 +98,7 @@ export const products = [
       "name": "Chicken french",
       "description": "Spicy chicken french",
       "price": "8.5",
-      "imageSrc": C7,
+      "photo": C7,
       "category": "Chicken"
     },
     {
@@ -106,7 +106,7 @@ export const products = [
       "name": "Paneer Curry",
       "description": "Delicious paneer curry",
       "price": "12",
-      "imageSrc": CU1,
+      "photo": CU1,
       "category": "Curry"
     },
     {
@@ -114,7 +114,7 @@ export const products = [
       "name": "Chicken Curry",
       "description": "Tasty chicken curry",
       "price": "15",
-      "imageSrc": CU2,
+      "photo": CU2,
       "category": "Curry"
     },
     {
@@ -122,7 +122,7 @@ export const products = [
         "name": "Lemon Curry",
         "description": "Tasty Lemon curry",
         "price": "8",
-        "imageSrc": CU3,
+        "photo": CU3,
         "category": "Curry"
       },
       {
@@ -130,7 +130,7 @@ export const products = [
         "name": "Chicken Leg Curry",
         "description": "Tasty chicken Leg curry",
         "price": "9.5",
-        "imageSrc": CU4,
+        "photo": CU4,
         "category": "Curry"
       },
       {
@@ -138,7 +138,7 @@ export const products = [
         "name": "Masala Curry",
         "description": "Tasty masala curry",
         "price": "13",
-        "imageSrc": CU5,
+        "photo": CU5,
         "category": "Curry"
       },
       {
@@ -146,7 +146,7 @@ export const products = [
         "name": "Rice Curry",
         "description": "Tasty rice curry",
         "price": "12.5",
-        "imageSrc": CU6,
+        "photo": CU6,
         "category": "Curry"
       },
     {
@@ -154,7 +154,7 @@ export const products = [
       "name": "Basmati Rice",
       "description": "Long grain basmati rice",
       "price": "3.5",
-      "imageSrc": R1,
+      "photo": R1,
       "category": "Rice"
     },
     {
@@ -162,7 +162,7 @@ export const products = [
       "name": "Fried Rice",
       "description": "Vegetable fried rice",
       "price": "7",
-      "imageSrc": R2,
+      "photo": R2,
       "category": "Rice"
     },
     {
@@ -170,7 +170,7 @@ export const products = [
         "name": "Fried Masala Rice",
         "description": "Vegetable fried masala rice",
         "price": "8.5",
-        "imageSrc": R3,
+        "photo": R3,
         "category": "Rice"
       },
       {
@@ -178,7 +178,7 @@ export const products = [
         "name": "Matar Rice",
         "description": "Matar simple rice",
         "price": "9",
-        "imageSrc": R4,
+        "photo": R4,
         "category": "Rice"
       },
       {
@@ -186,7 +186,7 @@ export const products = [
         "name": "White Rice",
         "description": "Vegetable White rice",
         "price": "6.4",
-        "imageSrc": R5,
+        "photo": R5,
         "category": "Rice"
       },
     {
@@ -194,7 +194,7 @@ export const products = [
       "name": "Grilled Fish",
       "description": "Fresh grilled fish",
       "price": "20",
-      "imageSrc": FI1,
+      "photo": FI1,
       "category": "Fish"
     },
     {
@@ -202,7 +202,7 @@ export const products = [
       "name": "Fish Curry",
       "description": "Spicy fish curry",
       "price": "18",
-      "imageSrc": FI2,
+      "photo": FI2,
       "category": "Fish"
     },
     {
@@ -210,7 +210,7 @@ export const products = [
         "name": "Fish",
         "description": "Spicy fish ",
         "price": "14",
-        "imageSrc": FI3,
+        "photo": FI3,
         "category": "Fish"
       },
       {
@@ -218,7 +218,7 @@ export const products = [
         "name": "Fish Tomo",
         "description": "Spicy fish tomo",
         "price": "10",
-        "imageSrc": FI4,
+        "photo": FI4,
         "category": "Fish"
       },
       {
@@ -226,7 +226,7 @@ export const products = [
         "name": "Fish Veg",
         "description": "Spicy fish veg",
         "price": "16",
-        "imageSrc": FI5,
+        "photo": FI5,
         "category": "Fish"
       },
      
@@ -235,7 +235,7 @@ export const products = [
       "name": "strawberries",
       "description": "strawberries spacial",
       "price": "5",
-      "imageSrc": F1,
+      "photo": F1,
       "category": "Fruits"
     },
     {
@@ -243,7 +243,7 @@ export const products = [
       "name": "pineapples",
       "description": "Juicy mangoes",
       "price": "4.5",
-      "imageSrc": F2,
+      "photo": F2,
       "category": "Fruits"
     },
     {
@@ -251,7 +251,7 @@ export const products = [
         "name": "Mango",
         "description": "Juicy mangoes",
         "price": "3.00",
-        "imageSrc": F3,
+        "photo": F3,
         "category": "Fruits"
       },
       {
@@ -259,7 +259,7 @@ export const products = [
         "name": "Grapes",
         "description": "Grapes spicy",
         "price": "3",
-        "imageSrc": F4,
+        "photo": F4,
         "category": "Fruits"
       },
       {
@@ -267,7 +267,7 @@ export const products = [
         "name": "Mango",
         "description": "Juicy mangoes",
         "price": "3.00",
-        "imageSrc": F5,
+        "photo": F5,
         "category": "Fruits"
       },
       {
@@ -275,7 +275,7 @@ export const products = [
         "name": "Pomegranate",
         "description": "Pomegranate spicy",
         "price": "7",
-        "imageSrc": F6,
+        "photo": F6,
         "category": "Fruits"
       },
       {
@@ -283,7 +283,7 @@ export const products = [
         "name": "Strowberries",
         "description": "Juicy mangoes strow",
         "price": "2",
-        "imageSrc": F7,
+        "photo": F7,
         "category": "Fruits"
       },
       {
@@ -291,7 +291,7 @@ export const products = [
         "name": "bair",
         "description": "Juicy bair",
         "price": "6",
-        "imageSrc": F8,
+        "photo": F8,
         "category": "Fruits"
       },
       {
@@ -299,7 +299,7 @@ export const products = [
         "name": "Banana",
         "description": "Banana juice",
         "price": "3.00",
-        "imageSrc": F9,
+        "photo": F9,
         "category": "Fruits"
       },
       {
@@ -307,7 +307,7 @@ export const products = [
         "name": "watermelon",
         "description": "Juicy watermelon",
         "price": "3.5",
-        "imageSrc": F10,
+        "photo": F10,
         "category": "Fruits"
       },
     {
@@ -315,7 +315,7 @@ export const products = [
       "name": "Vanilla Icecream",
       "description": "Creamy vanilla icecream",
       "price": "5.25",
-      "imageSrc": I1,
+      "photo": I1,
       "category": "Icecreams"
     },
     {
@@ -323,7 +323,7 @@ export const products = [
       "name": "Chocolate Icecream",
       "description": "Rich chocolate icecream",
       "price": "5.25",
-      "imageSrc": I2,
+      "photo": I2,
       "category": "Icecreams"
     },
     {
@@ -331,7 +331,7 @@ export const products = [
         "name": "Chocolate ice",
         "description": "Rich chocolate ice",
         "price": "4",
-        "imageSrc": I3,
+        "photo": I3,
         "category": "Icecreams"
       },
       {
@@ -339,7 +339,7 @@ export const products = [
         "name": "Cup Chocolate ",
         "description": "chocolate cup icecream",
         "price": "7",
-        "imageSrc": I4,
+        "photo": I4,
         "category": "Icecreams"
       },
       {
@@ -347,7 +347,7 @@ export const products = [
         "name": "Ice Choco",
         "description": "Rich ice chocolate icecream",
         "price": "2.25",
-        "imageSrc": I5,
+        "photo": I5,
         "category": "Icecreams"
       },
       {
@@ -355,7 +355,7 @@ export const products = [
         "name": "Cup Chocko Cream",
         "description": "Cup Chocko icecream",
         "price": "3.5",
-        "imageSrc": I6,
+        "photo": I6,
         "category": "Icecreams"
       },
       {
@@ -363,7 +363,7 @@ export const products = [
         "name": "Chocolate Cream",
         "description": "Rich choco cream",
         "price": "5.25",
-        "imageSrc": I7,
+        "photo": I7,
         "category": "Icecreams"
       },
     {
@@ -371,7 +371,7 @@ export const products = [
       "name": "Coke",
       "description": "Chilled Coca Cola",
       "price": "1.5",
-      "imageSrc": D1,
+      "photo": D1,
       "category": "Soft Drinks"
     },
     {
@@ -379,7 +379,7 @@ export const products = [
       "name": "Pepsi",
       "description": "Chilled Pepsi",
       "price": "1.8",
-      "imageSrc": D2,
+      "photo": D2,
       "category": "Soft Drinks"
     },
     {
@@ -387,7 +387,7 @@ export const products = [
         "name": "Black Pepsi",
         "description": "Black Chilled Pepsi",
         "price": "3",
-        "imageSrc": D3,
+        "photo": D3,
         "category": "Soft Drinks"
       },
       {
@@ -395,7 +395,7 @@ export const products = [
         "name": "Pepsi Ice",
         "description": "Chilled Pepsi  Lemo",
         "price": "4",
-        "imageSrc": D4,
+        "photo": D4,
         "category": "Soft Drinks"
       },
       {
@@ -403,7 +403,7 @@ export const products = [
         "name": "Sprite",
         "description": "Chilled sprite Pepsi",
         "price": "2.5",
-        "imageSrc": D5,
+        "photo": D5,
         "category": "Soft Drinks"
       },
       {
@@ -411,7 +411,7 @@ export const products = [
         "name": "Fanta",
         "description": "Chilled Pepsi Fanta",
         "price": "4",
-        "imageSrc": D6,
+        "photo": D6,
         "category": "Soft Drinks"
       },
       {
@@ -419,7 +419,7 @@ export const products = [
         "name": "Pepsi Icecream",
         "description": "Chilled Pepsi cream",
         "price": "8",
-        "imageSrc": D7,
+        "photo": D7,
         "category": "Soft Drinks"
       },
       {
@@ -427,7 +427,7 @@ export const products = [
         "name": "Pepsi momo",
         "description": "Chilled Pepsi ice",
         "price": "1.9",
-        "imageSrc": D8,
+        "photo": D8,
         "category": "Soft Drinks"
       },
 

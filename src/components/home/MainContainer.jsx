@@ -71,9 +71,7 @@ const MainContainer = () => {
        {/* Cart Container */}
        <Cart />
 
-      {/* footer  */}
-       <Footer />
-       
+    
     </div>
   );
 };

@@ -4,7 +4,7 @@ import CategoryList from './CategoryList';
 
 const Filter = ({ onCategoryClick, selectedCategory }) => {
   return (
-    <div className='w-full  rounded-xl bg-card hover:bg-white border border-gray-200'>
+    <div className='w-full  rounded-xl bg-card hover:bg-white border border-gray-200 pb-8'>
         <div className='flex flex-col gap-4 w-full p-4'>
             <div className='flex items-center justify-between border-b border-gray-200'>
                 <h1 className='text-[20px] font-medium'>Filters</h1>
