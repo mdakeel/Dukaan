@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import logo from '../../assets/logo.png'
 
-import { MdShoppingBasket, MdAdd, MdLogout, MdOutlineInfo } from 'react-icons/md'
+import { MdShoppingBasket, MdLogout, MdOutlineInfo } from 'react-icons/md'
 import { CgProfile } from "react-icons/cg";
 import { RxDashboard } from "react-icons/rx";
 import { RiHome3Line } from "react-icons/ri";
