@@ -11,8 +11,8 @@ import { FaBars } from "react-icons/fa6";
 
 import profile from '../../assets/avatar.png'
 import { motion } from 'framer-motion'
-import { Link } from 'react-scroll';
-import { useNavigate } from 'react-router-dom'
+
+import { Link, useNavigate } from 'react-router-dom'
 import { toggleCart } from '../../redux/cartSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -85,9 +85,9 @@ const MobileNavbar = () => {
                     </Link>
 
                     <ul className=' items-center w-full '>
-                    <Link to="home" smooth={true} duration={500}><li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><RiHome3Line /> Home</li></Link>
-                    <Link to="menu" smooth={true} duration={500}><li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><CgMenuBoxed /> Menu</li></Link>
-                    <Link to="about" smooth={true} duration={500}><li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><MdOutlineInfo /> About Us</li></Link>
+                    <li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><RiHome3Line /> Home</li>
+                   <li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><CgMenuBoxed /> Menu</li>
+                    <li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><MdOutlineInfo /> About Us</li>
                     </ul>
 
                     <Link to="dashboard" >
