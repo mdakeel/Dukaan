@@ -11,7 +11,8 @@ import { FaBars } from "react-icons/fa6";
 
 import profile from '../../assets/avatar.png'
 import { motion } from 'framer-motion'
-import { Link, useNavigate } from 'react-router-dom'
+import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom'
 import { toggleCart } from '../../redux/cartSlice';
 import { useDispatch, useSelector } from 'react-redux';
 
@@ -75,6 +76,8 @@ const MobileNavbar = () => {
                     exit={{ opacity: 0, scale: 0.6 }}
                     className='w-40 bg-gray-50  shadow-xl rounded-lg flex flex-col absolute top-11 right-0'
                 >
+                    {
+                        isMenu && ( <>
 
                     <Link to={"/profile"} >
                         <p onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <CgProfile /> Profile
@@ -82,18 +85,20 @@ const MobileNavbar = () => {
                     </Link>
 
                     <ul className=' items-center w-full '>
-                        <li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><RiHome3Line /> Home</li>
-                        <li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><CgMenuBoxed /> Menu</li>
-                        <li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><MdOutlineInfo /> About Us</li>
+                    <Link to="home" smooth={true} duration={500}><li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><RiHome3Line /> Home</li></Link>
+                    <Link to="menu" smooth={true} duration={500}><li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><CgMenuBoxed /> Menu</li></Link>
+                    <Link to="about" smooth={true} duration={500}><li onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'><MdOutlineInfo /> About Us</li></Link>
                     </ul>
 
-                    <Link to={"/dashboard"} >
+                    <Link to="dashboard" >
                         <p onClick={() => setIsMenu(false)} className='px-4 py-2 flex items-center gap-3 cursor-pointer hover:bg-slate-100 hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base'> <RxDashboard /> Dashboard</p>
                     </Link>
 
                     <Link to={"/login"} >
                         <p onClick={handleLogout} className='m-2 px-2 py-[6px]  flex items-center  bg-gray-200 hover:bg-gray-300 gap-3 cursor-pointer hover:text-headingColor transition-all duration-100 ease-in-out text-textColor text-base rounded-md shadow-md'><MdLogout /> Logout </p>
-                    </Link>
+                    </Link> 
+
+                    </> )}
                 </motion.div>
 
 

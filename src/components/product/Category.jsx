@@ -6,6 +6,7 @@ import ProductCard from './ProductCard';
 import Filter from './Filter/Filter';
 import Pagination from './Pagination';
 import { useGetData } from '../../react-query/QueriesMutations';
+import { Element } from 'react-scroll';
 
 const Category = () => {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -41,7 +42,8 @@ const Category = () => {
   const totalPages = Math.ceil(filteredProducts.length / productsPerPage);
 
   return (
-    <div className="w-full">
+    <Element className="w-full element" name='menu'>
+      <section>
       <MenuContainer 
         onCategoryClick={handleCategoryClick} 
         selectedCategory={selectedCategory}
@@ -56,7 +58,7 @@ const Category = () => {
 
 
        <div className='md:w-4/5 w-full flex flex-col md:items-end md:justify-end  items-center justify-center gap-6'>
-        <div className="w-full flex flex-wrap md:items-start md:justify-start items-center justify-center gap-4">
+        <div className="w-full flex flex-wrap  md:items-start md:justify-start items-center justify-center gap-4">
           {currentProducts.map((product) => (
             <ProductCard key={product.id} product={product} />
           ))}
@@ -68,8 +70,8 @@ const Category = () => {
       />
       </div>
       </div>
-     
-    </div>
+      </section>
+    </Element>
   );
 };
 
