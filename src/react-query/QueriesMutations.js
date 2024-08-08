@@ -1,5 +1,5 @@
-import { useQuery } from "react-query";
-import { getData } from "../utils/api/api";
+import { useMutation, useQuery, useQueryClient } from "react-query";
+import { createUser, getData } from "../utils/api/api";
 
 
 export const useGetData = () => {
@@ -15,3 +15,18 @@ export const useGetData = () => {
         }
     });
 };
+
+// create user 
+
+export const useCreateUser = () => {
+    const queryClient = useQueryClient()
+    return useMutation({
+        mutationFn: createUser,
+        onSuccess: (data) => {
+            queryClient.invalidateQueries(data)
+        },
+        onError: (error) => {
+            console.error(error);
+        }
+    })
+}
