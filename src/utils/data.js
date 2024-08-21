@@ -42,65 +42,65 @@ export const carousel = [
     name: "Icecream",
     decription: "Chocolate & vanilla",
     price: "5.25",
-    imageSrc: I1,
+    photo: I1,
   },
   {
     id: 2,
     name: "Strawberries",
     decription: "Fresh Strawberries",
     price: "10.25",
-    imageSrc: F1,
+    photo: F1,
   },
   {
     id: 3,
     name: "Chicken Kebab",
     decription: "Mixed Kebab Plate",
     price: "8.25",
-    imageSrc: C3,
+    photo: C3,
   },
   {
     id: 4,
     name: "Fish Kebab",
     decription: "Mixed Fish Kebab",
     price: "5.25",
-    imageSrc: c1,
+    photo: c1,
   },
   {
     id: 5,
     name: "Icecream",
     decription: "Chocolate & vanilla",
     price: "5.25",
-    imageSrc: I1,
+    photo: I1,
   },
   {
     id: 6,
     name: "Strawberries",
     decription: "Fresh Strawberries",
     price: "10.25",
-    imageSrc: F1,
+    photo: F1,
   },
   {
     id: 7,
     name: "Chicken Kebab",
     decription: "Mixed Kebab Plate",
     price: "8.25",
-    imageSrc: C3,
+    photo: C3,
   },
   {
     id: 8,
     name: "Fish Kebab",
     decription: "Mixed Fish Kebab",
     price: "5.25",
-    imageSrc: c1,
+    photo: c1,
   },
-  
+
 ];
 
 // categories
 
 
 export const categories = [
-  
+
   {
     id: 1,
     name: "All",
